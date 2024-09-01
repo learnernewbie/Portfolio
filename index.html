@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="sidebar">
+                <li onclick="hidesidebar()"><a href="#"><i class="fa-solid fa-x"></i></a> </li>
+                <li><a href="#" class="link">Home</a></li>
+                <li><a href="#projects" class="link">Projects</a></li>
+                <li><a href="#skills" class="link">Skills</a></li>
+                <li><a href="#contact" class="link">Contact Me</a></li>
+            </ul>
+
+            <ul class="nav-links" id="nav">
+                <li>
+                    <a href="#" class="logo mobileDisplay">
+                        <span class="mobileLogo"><p class="mobileLogoS">S</p></span>
+                    Sleepy Sloth 
+                    </a>
+                </li>
+                <li class="hideonmobile"><a href="#" class="link">Home</a></li>
+                <li class="hideonmobile"><a href="#projects" class="link">Projects</a></li>
+                <li class="hideonmobile"><a href="#skills" class="link">Skills</a></li>
+                <li class="hideonmobile"><a href="#contact" class="link">Contact Me</a></li>
+
+                <li onclick="showsidebar()"><a href="#"><i class="fa-solid fa-bars mobile-bar mobileDisplay" id="menu-btn"></i></a> </li>
+            </ul>  
+        </nav>
+    </header>
+
+    <main>
+        <section class="home-section" id="home">
+            <div class="home-text">
+                <h1>Hi, It's Sleepy here</h1>
+                <p><h3>I'm a Frontend/Backend Learner</h3></p>
+                <p>I am a new coder who started his journey of becoming a good web developer and app developer.</p>
+
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                </div>
+                
+                <div class="extra">
+                    <ul>
+                        <a href="#skills"><li>Skills</li></a>
+                        <a href="#contact"><li>Contact</li></a>
+                    </ul>   
+                </div>
+            </div>
+
+            <div class="img-section">
+                <img src="images/anime-png.png" alt="">
+            </div>
+        </section>        
+        
+        <section class="skills heading" id="skills">
+            <h2>Skills</h2>
+
+            <div class="skill-container">
+                <div class="skill-box">
+                    <div class="skill-info">
+                        <i class="fa-solid fa-book"></i>
+                        <h4>Html,Css,Js</h4>
+                        <p>This is for Frontend development</p>
+                    </div>
+                </div>
+
+                <div class="skill-box">
+                    <div class="skill-info">
+                        <i class="fa-solid fa-book"></i>
+                        <h4>Js,Python</h4>
+                        <p>This is for Discord bot Development</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="Projects heading" id="projects">
+            <h2>Projects</h2>
+        </section>
+
+
+        <section class="contactMe contact heading" id="contact">
+            <h2>Contact <span>Me</span></h2>
+            <form action="">
+                <div class="input-group">
+                    <div class="input-box">
+                        <input type="text" placeholder="Name" required>
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="input-box">
+                        <input type="number" placeholder="Phone Number">
+                        <input type="text" placeholder="Subject">
+                    </div>
+                </div>
+                <div class="input-group-2">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                    <input type="submit" value="Send Message" class="btn">
+                </div>
+            </form>
+        </section>
+        <!-- btn for top -->
+        <a href="#nav" class="btn reset"><i class="fa-solid fa-up-long"></i></a>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+        </div>
+
+        <ul class="list">
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#skills">Skills</a></li> 
+            <li><a href="#projects">Projects</a></li> 
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+
+        <p class="copyright">
+            &copy; 2024 <span>Sleepy Sloth</span>. All rights reserved.
+        </p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
