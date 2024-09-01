@@ -29,6 +29,7 @@ header {
     z-index: 100;
 }
 
+
 nav ul{
     display: flex;
     justify-content: flex-end;
@@ -218,6 +219,10 @@ section {
     justify-content: center;
     gap: 5rem; /* Adjusted gap for responsiveness */
     flex-wrap: wrap; /* Added for better responsiveness */
+}
+
+#home span {
+    color: var(--main-color);
 }
 
 .home-text {
